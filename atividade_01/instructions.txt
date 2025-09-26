@@ -1,0 +1,65 @@
+1. Escreva um programa que implemente a cifra de César para criptografar e descriptografar mensagens, 
+dado um texto e uma chave (deslocamento de 0 a 25). 
+
+ 
+
+2. Escreva um programa que, dado apenas um texto cifrado, tente todas as 26 chaves possíveis e mostre os resultados. 
+O programa deve indicar qual resultado é mais provável de ser o texto original. 
+
+ 
+
+3. Implemente um algoritmo que compare a frequência de letras do texto cifrado com a frequência média do português 
+para tentar identificar automaticamente a chave usada. Utilize a informação contida em:
+ https://www.gta.ufrj.br/grad/06_2/alexandre/criptoanalise.html
+
+ 
+
+4. Escreva um programa que implemente a cifra de Vigenère (criptografar e descriptografar), 
+permitindo chaves de tamanhos variados. 
+
+ 
+
+5. Dado um texto cifrado, implemente um método para encontrar padrões repetidos e estimar 
+o tamanho da chave da cifra de Vigenère. Dica: Faça usando o exame de Kasiski.
+
+ 
+
+6. Escreva um programa que calcule o índice de coincidência de um texto cifrado e use esse 
+valor para tentar estimar automaticamente o tamanho da chave de Vigenère. Dica: https://en.wikipedia.org/wiki/Index_of_coincidence
+
+ 
+
+7. Implemente a cifra de transposição em colunas, permitindo que o usuário defina a chave 
+como uma ordem de colunas.
+
+ 
+
+8. Crie um programa que aplique duas transposições sucessivas com chaves diferentes.
+ Teste se a mensagem é recuperada corretamente na descriptografia. 
+
+ 
+
+9. Escreva um programa que gere uma permutação aleatória do alfabeto e a use como chave para cifrar e decifrar mensagens.
+
+ 
+
+10. Implemente um ataque automatizado à cifra de substituição simples utilizando análise de frequência e uma técnica de otimização (por exemplo, hill-climbing ou busca local) para tentar reconstruir a chave.
+
+ 
+
+11. Implemente uma rede de Feistel com blocos de 8 bits, 4 rodadas, 
+e uma função de rodada simples (por exemplo, XOR com subchave e substituição por tabela – veja slide da semana 2).
+
+
+12. Implemente uma versão simplificada do DES com base na mini-rede de 
+Feistel desenvolvida no exercício anterior. As especificações são as seguintes:
+
+Bloco de entrada: 16 bits.
+
+Chave: 12 bits.
+
+Permutações: Crie seu próprio algoritmo de permutação inicial e final, lembrando que a permutação final deve ser o inverso da inicial.
+
+Ciclos: Realize 4 rodadas, gerando 4 chaves intermediárias. Cada chave deve ser obtida a partir da chave original com deslocamento de 1 bit à esquerda e descartando os 4 bits menos significativos.
+
+Substituição (S-boxes): Divida os 8 bits de entrada em dois blocos de 4 bits e construa duas tabelas de substituição para cada bloco de 4 bits.
